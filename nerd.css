@@ -4,57 +4,203 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 0;
+    font-size: 16px;
 }
 li {
     list-style: none;
+}
+h1 {
+    margin: 0;
 }
 a {
     text-decoration: none;
 }
 .main-container {
-    width: 1450px;
+    width: 1200px;
     margin: 0 auto;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
 }
 .header {
-    padding: 40px 140px;
+    margin-bottom: 80px;
+    min-height: 495px;
     background-color: #eeeeee;
-    min-height: 460px;
     background-image: url(./img/header/slide1.png);
     background-repeat: no-repeat;
-    background-position: right 180px top 125px;
+    background-position: top 85px right 70px;
 }
-.header-nav {
+.header-nav_main{
     display: flex;
     align-items: center;
+    padding-right: 40px;
+    margin-bottom: 78px;
+}
+.header-nav {
+    margin: 0  auto;
 }
 .header-nav__list {
     display: flex;
-    justify-content: space-between;    
     align-items: center;
-    margin-left: 32%;
-    margin-top: 20px;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-right: 40px;
 }
 .header-nav__list__item {
-    margin-left: 45px;
-}
-
-.header-nav__list__link {
-    font-size: 16px;
+    margin-right: 45px;
+    font-weight: bold;
     text-transform: uppercase;
 }
 .header-cart {
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: 11px;
-    min-width: 200px;
-    font-size: 16px;
-    text-align: right;
-    text-transform: uppercase;
-    background-image: url(./img/header/cart.png);
-    background-repeat: no-repeat;
-    background-position: right 100px center;
+    text-align: center;
+    padding-top: 20px;
 }
+
 .header-cart-link {
-    color: black;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.header-info {
+    display: flex;
+    flex-direction: column;
+}
+.header__title {
+    margin-bottom: 28px;
+    width: 45%;
+    font-size: 55px;
+    line-height: 55px;
+}
+.header-text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 42px;
+}
+.header-info__btn {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 16px;
+    max-width: 205px;
+    background-color: red;
+    border: 1px solid red;
+}
+
+/* секция 2 */
+
+.sells-list {
+    display: flex;
+    /* margin-bottom: 75px; */
+    max-height: 425px;
+    border-bottom: 2px solid gray;
+}
+.sells-list__item {
+    max-width: 33.5%;
+    min-height: 440px;
+}
+.sells-list__item:nth-child(2) {
+    margin-left: 100px;
+}
+.sells-list__item:nth-child(3) {
+    margin-left: 100px;
+}
+.sells-list__img {
+    margin-bottom: 25px;
+}
+.sells-list__title {
+    margin-bottom: 23px;
+}
+.sells-list__title {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+}
+.sells-list__text {
+    margin-bottom: 55px;
+}
+.sells-btn {
+    padding: 15px 40px;
+    color: white;
+    font-weight: bold;
+}
+.sells-list-btn__red {
+    background-color: #fb565a;
+}
+.sells-list-btn__green {
+    background-color: #00ca74;
+}
+.sells-list-btn__yellow {
+    background-color: #efc849; 
+}
+/* Секция 3 */
+.weare-container {
+    display: flex;
+    align-items: flex-start;
+    min-height: 530px;
+    border-bottom: 2px solid black;
+}
+.werare-list-container {
+    margin-top: 75px;
+    width: 60%;
+}
+.percent-img {
+    margin-top: 45px;
+    margin-bottom: 40px;
+    margin-left: auto;
+}
+.werare-percent-container {
+    margin-left: auto;
+    margin-right: 43px;
+    max-width: 355px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.weare-title {
+    margin-bottom: 32px;
+    font-size: 45px;
+    line-height: 48px;
+}
+.weare-text {
+    margin-bottom: 45px;
+    width: 90%;
+    line-height: 22px;
+}
+.weare-list-title {
+    text-transform: uppercase;
+}
+.weare-list-item {
+    margin-left: auto;
+    margin-top: 30px;
+}
+.weare-list-item::before {
+    content: "—";
+    color: red;
+    position: relative;
+    left: -5px;
+}
+.percent-text-main {
+    margin-left: auto;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.percent-list {
+    display: flex;
+}
+.percent-list-item {
+    display: flex;
+    flex-direction: column;
+}
+.percent-percent {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 45px;
+}
+.percent-list-item:not(:first-child) {
+    margin-left: 15px ;
+}
+.percent-list-item:nth-child(3) {
+    margin-left: 5px;
 }
