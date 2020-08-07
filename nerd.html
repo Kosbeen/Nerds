@@ -9,8 +9,8 @@
     <title>Nerd</title>
 </head>
 <body>
-    <div class="main-container">
         <header class="header">
+            <div class="main-container">
             <div class="header-nav_main"> 
                 <img class="header__logo" src="./img/header/logo.png" alt="Logo">
                 <nav class="header-nav">
@@ -32,9 +32,10 @@
                 <p class="header-text"> Математически выверенный дизайн <br>для вашего сайта или мобильного приложения. </p>
                 <a class="header-info__btn" href="#">Узнать больше</a>
             </div>
-        </header>
+            </header>
         <main class="main">
-            <section class="sells">
+            <div class="main-container">
+                <section class="sells">
                 <ul class="sells-list">
                     <li class="sells-list__item">
                         <img class="sells-list__img" src="./img/main/illustration-1.jpg.png" alt="">
@@ -56,7 +57,8 @@
                         <a href="#" class="sells-list-btn__yellow sells-btn">ЗАКАЗАТЬ</a>
                     </li>
                 </ul>
-            </section>
+                </section>
+           
             <section class="weare">
                  <div class="weare-container">
                      <div class="werare-list-container">
@@ -75,21 +77,29 @@
                         <p class="percent-text-main">с 2004 года Любим точность во всем:</p>
                         <ul class="percent-list">
                             <li class="percent-list-item">
-                                <span class="percent-percent">146%</span>
+                                <span class="percent-percent">146<sup class="percent-percent_sup">%</sup></span>
                                 <span class="percent-text">Уровень самоотдачи</span>
                             </li>
                             <li class="percent-list-item">
-                                <span class="percent-percent">100%</span>
+                                <span class="percent-percent">100<sup class="percent-percent_sup">%</sup></span>
                                 <span class="percent-text">Соблюдение сроков</span>
                             </li>
                             <li class="percent-list-item">
-                                <span class="percent-percent">50%</span>
+                                <span class="percent-percent">50<sup class="percent-percent_sup">%</sup></span>
                                 <span class="percent-text">Минимальная предоплата</span>
                             </li>
                         </ul>
                  </div>
-
             </section>
+            <section class="logo">
+                <ul class="logo-list">
+                    <li class="logo-list-item-html logo__items"><img src="./img/logos/logo-1.png" alt=""></li>
+                    <li class="logo-list-item-boro logo__items"><img src="./img/logos/logo-2.png" alt=""></li>
+                    <li class="logo-list-item-pink logo__items"><img src="./img/logos/logo-3.png" alt=""></li>
+                    <li class="logo-list-item-mishka logo__items"><img src="./img/logos/logo-4.png" alt=""></li>
+                </ul>
+            </section>
+            <!-- </div> -->
         </main>
     </div>
     
