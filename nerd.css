@@ -84,6 +84,7 @@ a {
     max-width: 205px;
     background-color: red;
     border: 1px solid red;
+    border-radius: 2px;
 }
 
 /* секция 2 */
@@ -119,6 +120,7 @@ a {
     padding: 15px 40px;
     color: white;
     font-weight: bold;
+    border-radius: 2px;
 }
 .sells-list-btn__red {
     background-color: #fb565a;
@@ -267,11 +269,11 @@ a {
 /* Секция 5 */
 .map {
     position: relative;
-    width: 1480px;
+    width: 1440px;
     margin: 0 auto;
     margin-bottom: 30px;
     min-height: 495px;
-    background-image: url(./img/map/big-map.png);
+    background-image: url(./img/footer/map-marker.png);
     background-repeat: no-repeat;
     background-position:  left;
 }
@@ -302,42 +304,50 @@ a {
     font-weight: bold;
     color: white;
     background-color: #fb565a;
+    border-radius: 2px;
 }
-.map-img {
-    position: absolute;
-    right: 425px;
-    top: 129px;
-}
+
 /* footer */
 .footer-container {
     display: flex;
     align-items: center;
+    padding-bottom: 70px;
 }
-.icon-list-item {
-    width: 80px;
-    height: 80px;
-}
+
 .icon-list-item:not(:last-child) {
     margin-right: 10px;
 }
 .icon-list {
     display: flex;
 }
-
 .vk {
+    display: block;
+    width: 80px;
+    height: 80px;
     background-image: url(./img/footer/vk-icon.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 .fb {
+    display: block;
+    width: 80px;
+    height: 80px;
     background-image: url(./img/footer/fb-icon.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 .insta {
+    display: block;
+    width: 80px;
+    height: 80px;
     background-image: url(./img/footer/insta-icon.png);
     background-repeat: no-repeat;
     background-position: center;
+}
+.icon-lis-link::after {
+    content:'';
+    width: 80px;
+    height: 80px;
 }
 .footer-info {
     margin-left: 140px;
