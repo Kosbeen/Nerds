@@ -214,6 +214,7 @@ a {
 .logo {
     border-bottom: 2px solid gray;
     padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 .logo-list {
     display: flex;
@@ -262,4 +263,89 @@ a {
     background-color: black;
     top: 60px;
     right: -36px;
+}
+/* Секция 5 */
+.map {
+    position: relative;
+    width: 1480px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    min-height: 495px;
+    background-image: url(./img/map/big-map.png);
+    background-repeat: no-repeat;
+    background-position:  left;
+}
+.container-map {
+    position: absolute;
+    padding: 55px 50px;
+    margin: 95px 140px;
+    min-width: 220px;
+    min-height: 200px;
+    background-color: white;
+    font-family: sans-serif;
+}
+.map-title {
+    margin-bottom: 28px;
+}
+.map-list-item_text {
+    margin-bottom: 20px;
+}
+.map-list-item {
+    margin-bottom: 50px;
+}
+.map-link {
+    color: black;
+}
+
+.map-btn-link {
+    padding: 15px 43px;
+    font-weight: bold;
+    color: white;
+    background-color: #fb565a;
+}
+.map-img {
+    position: absolute;
+    right: 425px;
+    top: 129px;
+}
+/* footer */
+.footer-container {
+    display: flex;
+    align-items: center;
+}
+.icon-list-item {
+    width: 80px;
+    height: 80px;
+}
+.icon-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+.icon-list {
+    display: flex;
+}
+
+.vk {
+    background-image: url(./img/footer/vk-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fb {
+    background-image: url(./img/footer/fb-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.insta {
+    background-image: url(./img/footer/insta-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer-info {
+    margin-left: 140px;
+}
+.footer-title {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
