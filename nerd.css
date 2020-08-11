@@ -99,6 +99,14 @@ a {
     border: 1px solid #fb565a;
     border-radius: 2px;
 }
+.header-info__btn:hover {
+    background-color: #e74246;
+}
+.header-info__btn:active {
+    background-color: #d7373b;
+    color: #e37376;
+} 
+
 
 /* секция 2 */
 .sells-list {
@@ -284,9 +292,11 @@ a {
     width: 1440px;
     position: relative;
     margin: 0  auto;
-    padding-bottom: 76px;
+    padding-bottom: 76   px;
 }
-
+iframe {
+    border: 0px;
+}
 .container-map {
     position: absolute;
     padding: 55px 50px;
