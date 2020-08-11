@@ -349,6 +349,12 @@ iframe {
     background-color: #fb565a;
     border-radius: 2px;
 }
+.map-btn-link:hover {
+    background-color: #e74246;
+}
+.map-btn-link:active {
+    background-color: #d7373b;
+}
 
 /* footer */
 .footer-container {
