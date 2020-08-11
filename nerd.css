@@ -35,6 +35,12 @@ a {
     padding-right: 40px;
     margin-bottom: 78px;
 }
+.header__logo:hover {
+    opacity: 0.8;
+}
+.header__logo:active {
+    opacity: 0.1;
+}
 .header-nav {
     margin: 0  auto;
 }
@@ -50,14 +56,22 @@ a {
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .header-nav__list__link {   
     color: black;
+}
+.header-nav__list__link:hover {
+    color: #fb565a;
+}
+.header-nav__list__link:active {
+    color: #a6a6a6;
 }
 .header-cart {
     position: relative;
     text-align: center;
     padding-top: 20px;
 }
+
 .header-cart::before {
     position: absolute;
     content: '';
@@ -72,6 +86,13 @@ a {
     display: block;
     font-weight: bold;
     text-transform: uppercase;
+    color: black;
+}
+.header-cart-link:hover {
+    color: #fb565a;
+}
+.header-cart-link:active {
+    color: #a6a6a6;
 }
 .header-info {
     display: flex;
@@ -96,7 +117,7 @@ a {
     padding: 15px 16px;
     max-width: 205px;
     background-color: #fb565a;
-    border: 1px solid #fb565a;
+    border: 3px solid #fb565a;
     border-radius: 2px;
 }
 .header-info__btn:hover {
@@ -144,6 +165,7 @@ a {
     border-radius: 2px;
 }
 .sells-list-btn__red {
+    border: 3px solid #fb565a;
     background-color: #fb565a;
 }
 .sells-list-btn__red:hover {
@@ -154,6 +176,7 @@ a {
     color:#e26f72;
 }
 .sells-list-btn__green {
+    border: 3px solid #00ca74;
     background-color: #00ca74;
 }
 .sells-list-btn__green:hover {
@@ -164,6 +187,7 @@ a {
     color: #38bd84;
 }
 .sells-list-btn__yellow {
+    border: 3px solid #efc849;
     background-color: #efc849; 
 }
 .sells-list-btn__yellow:hover {
@@ -346,6 +370,7 @@ iframe {
     padding: 15px 43px;
     font-weight: bold;
     color: white;
+    border: 3px solid #fb565a;
     background-color: #fb565a;
     border-radius: 2px;
 }
@@ -354,6 +379,7 @@ iframe {
 }
 .map-btn-link:active {
     background-color: #d7373b;
+    color: #e37376;
 }
 
 /* footer */
