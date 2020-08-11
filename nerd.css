@@ -50,11 +50,24 @@ a {
     font-weight: bold;
     text-transform: uppercase;
 }
+.header-nav__list__link {   
+    color: black;
+}
 .header-cart {
+    position: relative;
     text-align: center;
     padding-top: 20px;
 }
-
+.header-cart::before {
+    position: absolute;
+    content: '';
+    top: 19px;
+    right: 96px;
+    width: 18px;
+    height: 18px;
+    background-image: url(./img/header/cart.png);
+    background-repeat: no-repeat;
+}
 .header-cart-link {
     display: block;
     font-weight: bold;
@@ -82,8 +95,8 @@ a {
     text-transform: uppercase;
     padding: 15px 16px;
     max-width: 205px;
-    background-color: red;
-    border: 1px solid red;
+    background-color: #fb565a;
+    border: 1px solid #fb565a;
     border-radius: 2px;
 }
 
@@ -216,7 +229,7 @@ a {
 .logo {
     border-bottom: 2px solid gray;
     padding-bottom: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 .logo-list {
     display: flex;
@@ -268,24 +281,23 @@ a {
 }
 /* Секция 5 */
 .map {
-    position: relative;
     width: 1440px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    min-height: 495px;
-    background-image: url(./img/footer/map-marker.png);
-    background-repeat: no-repeat;
-    background-position:  left;
+    position: relative;
+    margin: 0  auto;
+    padding-bottom: 50px;
 }
+
 .container-map {
     position: absolute;
     padding: 55px 50px;
-    margin: 95px 140px;
+    top: 55px;
+    left: 120px;
     min-width: 220px;
     min-height: 200px;
     background-color: white;
     font-family: sans-serif;
 }
+
 .map-title {
     margin-bottom: 28px;
 }
