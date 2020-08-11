@@ -146,11 +146,32 @@ a {
 .sells-list-btn__red {
     background-color: #fb565a;
 }
+.sells-list-btn__red:hover {
+    background-color: #e74246;
+}
+.sells-list-btn__red:active {
+    background-color: #d7373b;
+    color:#e26f72;
+}
 .sells-list-btn__green {
     background-color: #00ca74;
 }
+.sells-list-btn__green:hover {
+    background-color: #00bc6c;
+}
+.sells-list-btn__green:active {
+    background-color: #00aa62;
+    color: #38bd84;
+}
 .sells-list-btn__yellow {
     background-color: #efc849; 
+}
+.sells-list-btn__yellow:hover {
+    background-color: #eab534;
+}
+.sells-list-btn__yellow:active {
+    background-color: #e5a722;
+    color: #e7ae34;
 }
 /* Секция 3 */
 .weare-container {
