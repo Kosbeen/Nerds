@@ -5,6 +5,7 @@
     margin-inline-end: 0px;
     padding-inline-start: 0;
     font-size: 16px;
+    box-sizing: border-box;
 }
 li {
     list-style: none;
@@ -16,7 +17,9 @@ a {
     text-decoration: none;
 }
 .main-container {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 25px;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
@@ -27,7 +30,7 @@ a {
     background-color: #eeeeee;
     background-image: url(./img/header/slide1.png);
     background-repeat: no-repeat;
-    background-position: top 130px left 765px;
+    background-position: 100% 100%;
 }
 .header-nav_main{
     display: flex;
@@ -117,7 +120,7 @@ a {
     padding: 15px 16px;
     max-width: 205px;
     background-color: #fb565a;
-    border: 3px solid #fb565a;
+    border: 1px solid #fb565a;
     border-radius: 2px;
 }
 .header-info__btn:hover {
@@ -134,10 +137,10 @@ a {
     display: flex;
     /* margin-bottom: 75px; */
     padding-bottom: 80px;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid #eeeeee;
 }
 .sells-list__item {
-    max-width: 33.5%;
+    width: 33.5%;
 }
 .sells-list__item:nth-child(2) {
     margin-left: 100px;
@@ -165,7 +168,7 @@ a {
     border-radius: 2px;
 }
 .sells-list-btn__red {
-    border: 3px solid #fb565a;
+    border: 1px solid #fb565a;
     background-color: #fb565a;
 }
 .sells-list-btn__red:hover {
@@ -176,7 +179,7 @@ a {
     color:#e26f72;
 }
 .sells-list-btn__green {
-    border: 3px solid #00ca74;
+    border: 1px solid #00ca74;
     background-color: #00ca74;
 }
 .sells-list-btn__green:hover {
@@ -187,7 +190,7 @@ a {
     color: #38bd84;
 }
 .sells-list-btn__yellow {
-    border: 3px solid #efc849;
+    border: 1px solid #efc849;
     background-color: #efc849; 
 }
 .sells-list-btn__yellow:hover {
@@ -203,7 +206,7 @@ a {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #eeeeee;
 }
 .werare-list-container {
     margin-top: 75px;
@@ -280,7 +283,7 @@ a {
 }
 /* Cсекция 4 */
 .logo {
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid #eeeeee;
     padding-bottom: 40px;
     margin-bottom: 80px;
 }
@@ -343,12 +346,14 @@ a {
 }
 /* Секция 5 */
 .map {
-    width: 1440px;
+    width: 100%;
     position: relative;
     margin: 0  auto;
-    padding-bottom: 76   px;
+    padding-bottom: 76px;
 }
-iframe {
+.frame-map {
+    width: 100%;
+    height: 400px;
     border: 0px;
 }
 .container-map {
@@ -379,7 +384,7 @@ iframe {
     padding: 15px 43px;
     font-weight: bold;
     color: white;
-    border: 3px solid #fb565a;
+    border: 1px solid #fb565a;
     background-color: #fb565a;
     border-radius: 2px;
 }
@@ -398,36 +403,43 @@ iframe {
     padding-bottom: 70px;
 }
 
-.icon-list-item:not(:last-child) {
-    margin-right: 10px;
-}
+
 .icon-list {
     display: flex;
+    padding: 0;
+    list-style: none;
+}
+.icon-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+.icon-list-item {
+    display: inline-block;
+    width: 77px;
+    height: 77px;
+    /* vertical-align: top; */
+    border-radius: 50%;
+    background-color: #e1e1e1;
 }
 .vk {
-    display: block;
-    width: 80px;
-    height: 80px;
-    background-image: url(./img/footer/vk-icon.png);
+    background-image: url(./img/footer/vk.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50% 50%;
 }
 .fb {
-    display: block;
-    width: 80px;
-    height: 80px;
-    background-image: url(./img/footer/fb-icon.png);
+    background-image: url(./img/footer/fb.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50% 50%;
 }
 .insta {
-    display: block;
-    width: 80px;
-    height: 80px;
-    background-image: url(./img/footer/insta-icon.png);
+    background-image: url(./img/footer/insta.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50% 50%;
 }
+.icon-item:not(:last-child) {
+    margin-right: 15px;
+}
+
 .icon-lis-link::after {
     content:'';
     width: 80px;
@@ -442,4 +454,68 @@ iframe {
     font-size: 36px;
     font-weight: bold;
     letter-spacing: 0.5px;
+}
+.icon-list-item:hover {
+    background-color: #e74246;
+}
+.insta:active {
+    background-image: url(./img/footer/insta-red.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.vk:active {
+    background-image: url(./img/footer/vk-red.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.fb:active {
+    background-image: url(./img/footer/fb-red.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+@media (max-width: 1024px) {
+    .main-container {
+        padding: 0 30px;
+    }
+    .sells-list {
+        flex-direction: column;
+    }
+    .sells-list__img {
+        width: 100%;
+    }
+    .sells-list__item {
+        margin-bottom: 50px;
+        align-self: center;
+        width: 33.5%;
+    }
+    .sells-list__title {
+        text-align: center;
+    }
+    .sells-list__text {
+        text-align: center;
+    }
+    .sells-btn {
+        margin-left: 25%;
+    }
+    .sells-list__item:nth-child(2) {
+        margin-left: 0;
+    }
+    .sells-list__item:nth-child(3) {
+        margin-left: 0;
+    }
+    .frame-map {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .icon-list {
+        /* width: 280px; */
+        display: flex;
+    } 
+}
+@media (max-width: 768px) {
+    .main-container {
+        max-width: 768px;
+        padding: 0 25px;
+    }
 }
