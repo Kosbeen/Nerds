@@ -30,7 +30,7 @@ a {
     background-color: #eeeeee;
     background-image: url(./img/header/slide1.png);
     background-repeat: no-repeat;
-    background-position: 100% 100%;
+    background-position: 430px 81px;
 }
 .header-nav_main{
     display: flex;
