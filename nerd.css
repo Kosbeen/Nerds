@@ -26,6 +26,9 @@ a {
 .header {
     padding-top: 49px;
     margin-bottom: 80px;
+   
+}
+.header-container {
     min-height: 495px;
     background-color: #eeeeee;
     background-image: url(./img/header/slide1.png);
